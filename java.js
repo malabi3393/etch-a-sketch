@@ -1,7 +1,3 @@
-// console.log(document.title);
-// console.log(document.head);
-
-
 var container = document.querySelector('#container');
 var test = document.getElementsByClassName('text-box');
 var btn = document.getElementById('btn');
@@ -43,7 +39,7 @@ function createGrid(n) {
     removeOldGraph();
     var i = 700 / n;
     let boxSize = i + 'px';
-    //create 16 x 16 squares
+    //create n x n squares
     for (let i = 0; i < n; i++) {
         const newRow = document.createElement('div');
         newRow.className = 'newRow';
@@ -81,63 +77,15 @@ function removeOldGraph() {
 
 }
 
-
-
-
-
-// var aBox = document.getElementsByClassName('boxes');
-
-
-//  userSelection.forEach(selection => selection.addEventListener('click', setUserSelection));
-
-// for (let i = 0; i < aBox.length; i++) {
-//     aBox[i].addEventListener('mouseover', boxHover);
-// }
-
-
 function boxHover(e) {
-    // console.log(e.target);
+    
     /*Choose a number between 0 and 255*/
     let r = Math.floor(Math.random() * 256);
     let g = Math.floor(Math.random() * 256);
     let b = Math.floor(Math.random() * 256);
-
-    // var rgb = 'rgb('+r+','+g+','+b+')';
     e.target.style.background = 'rgb('+r+','+g+','+b+')';
-
 }
 
-
-
-//create an id
-// newDiv.id= 'box1';
-
-
-
-
-
-
-
-
-//newDiv.setAttribute('title', 'Hello Div');
-
-//create text node
-// var newDivText = document.createTextNode('Hello Bitch');
-
-//append text to div
-// newDiv.appendChild(newDivText);
-// newDiv.style.borderStyle = 'solid';
-// newDiv.style.width = boxSize;
-// newDiv.style.height = boxSize;
-
-//insert it into the DOM
-
-
-//Get DOM ELEMENTS
-// var container = document.querySelector('#container');
-var body = document.querySelector('body');
-console.log(body);
-console.log(container);
 
 
 
